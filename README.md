@@ -56,19 +56,10 @@ make
 
 | Command          | Description                          |
 |------------------|--------------------------------------|
-| `make s21_cat`   | Build only the `cat` implementation  |
-| `make s21_grep`  | Build only the `grep` implementation |
-| `make all`       | Build both utilities                 |
-| `make test`      | Run the test suite                   |
-| `make clean`     | Remove all build artifacts           |
+| `make`         | Build only the implementation (in current folder) |
+| `make test`    | Run the test suite (in current folder)            |
+| `make clean`   | Remove all build artifacts  (in current folder)   |
 
-## Project Structure
-src/
-├── cat/        # Cat implementation
-├── common/     # Shared utilities
-├── grep/       # Grep implementation
-tests/          # Test cases
-Makefile        # Build configuration
 
 ## How to use
 
@@ -78,22 +69,42 @@ Makefile        # Build configuration
 - PCRE2 library (for grep functionality)
 - Git (for cloning repository)
 
+### Important Notes for macOS Users
+❗ **40+ test failures expected** on macOS due to behavior differences between:
+- GNU `cat` (Linux default)
+- BSD `cat` (macOS default)
+
+**Solution**: Install GNU coreutils first:
+```bash
+brew install coreutils
+# Use gcat for testing reference
+make test TEST_CMD=gcat
+```
 ### Installation Steps
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/dv-stepurina/Cat_Grep.git
    cd simple-bash-utils
-   ```
-2. Build the utilities:
-```bash
-   make all
- ```
+```
+
+2. Navigate to and build each utility:
+``` bash
+# For cat utility
+cd src/cat/
+make s21_cat
+
+# For grep utility
+cd ../grep/
+make s21_grep
+```
+
 3. Run the test suite:
 ```bash
-   test 
+   make test 
  ```
+
 4. Clean build artifacts:
 ```bash
-   clean 
+   make clean 
  ```

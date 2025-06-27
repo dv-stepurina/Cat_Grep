@@ -17,4 +17,4 @@ style:
 	clang-format  -n *.c *.h
 
 clean:
-	rm s21_cat
+	rm s21_cat file* log.txt
