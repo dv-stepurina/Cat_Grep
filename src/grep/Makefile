@@ -18,4 +18,4 @@ style:
 	clang-format -n *.c *.h
 
 clean:
-	rm s21_grep
+	rm s21_grep res*
