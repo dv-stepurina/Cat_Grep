@@ -4,7 +4,7 @@ MyArray=("-b" "-e" "-v" "-t" "-et" "-n" "-s" "-bs" "-bn" "-b -n" "-b -s" "-s -n"
 success=0
 fail=0
 
-txt=("" "1_txt" "fmgjkhj" "2_txt" "3_txt" "4_txt")
+txt=("" "../datasets/1_txt" "fmgjkhj" "../datasets/2_txt" "../datasets/3_txt" "../datasets/4_txt")
 
 
 if [[ "$OSTYPE" == "darwin"* ]]; then

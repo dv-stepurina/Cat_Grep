@@ -3,7 +3,7 @@ MyArray=(" " "-e" "-i" "-v" "-c" "-l" "-n" "-h" "-s"  "-o")
 success=0
 fail=0
 text=(" " "jo" "Jo" "пр" "Пр")
-files=(" " "file1" "file1 file2" "file1 file2 file3" "file2" "gfdg" "file3")
+files=(" " "../datasets/file1" "../datasets/file1 ../datasets/file2" "../datasets/file1 ../datasets/file2 ../datasets/file3" "../datasets/file2" "gfdg" "../datasets/file3")
 count=0
 
 for a in ${MyArray[@]}; do 
@@ -30,7 +30,7 @@ for a in ${MyArray[@]}; do
 	done
 done
 
-f_file=("file_reg" " " "file_reg_2" "file_reg_3")
+f_file=("../datasets/file_reg" " " "../datasets/file_reg_2" "../datasets/file_reg_3")
 
 
 for f_f in ${f_file[@]}; do 
