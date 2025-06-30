@@ -1,8 +1,5 @@
 # Simple Bash Utils (cat & grep in C)
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
-
 POSIX-compliant implementations of `cat` and `grep` utilities written in C.
 
 ## Features
