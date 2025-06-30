@@ -12,7 +12,6 @@ POSIX-compliant implementations of `cat` and `grep` utilities written in C.
   - `-s`/`--squeeze-blank` - Suppress repeated empty lines
   - `-t` - Display tabs as `^I`
 - Multiple file input support
-- Binary-safe file handling
 
 ### ✔️ s21_grep
 **Functionality:**
